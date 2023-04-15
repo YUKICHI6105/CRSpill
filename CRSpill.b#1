@@ -3988,9 +3988,22 @@ design rules under a new name.</description>
 </signal>
 <signal name="PB3">
 <contactref element="U1" pad="39"/>
+<contactref element="IC2" pad="P$31"/>
+<wire x1="40.005" y1="16.6116" x2="40.005" y2="16.1544" width="0.1524" layer="1"/>
+<wire x1="39.8526" y1="16.764" x2="40.005" y2="16.6116" width="0.1524" layer="1"/>
+<wire x1="39.8526" y1="18.9738" x2="39.8526" y2="16.764" width="0.1524" layer="1"/>
+<wire x1="39.9288" y1="19.05" x2="39.8526" y2="18.9738" width="0.1524" layer="1"/>
+<wire x1="40.005" y1="16.1544" x2="40.063775" y2="16.1092125" width="0.1524" layer="1"/>
+<wire x1="39.9288" y1="19.05" x2="39.95" y2="19.09" width="0.1524" layer="1"/>
 </signal>
 <signal name="PB4">
 <contactref element="U1" pad="40"/>
+<contactref element="IC2" pad="P$32"/>
+<wire x1="39.5478" y1="16.383" x2="39.5478" y2="16.002" width="0.1524" layer="1"/>
+<wire x1="37.4142" y1="18.5166" x2="39.5478" y2="16.383" width="0.1524" layer="1"/>
+<wire x1="37.4142" y1="19.05" x2="37.4142" y2="18.5166" width="0.1524" layer="1"/>
+<wire x1="39.5478" y1="16.002" x2="39.593928125" y2="15.938203125" width="0.1524" layer="1"/>
+<wire x1="37.4142" y1="19.05" x2="37.41" y2="19.09" width="0.1524" layer="1"/>
 </signal>
 <signal name="PC15">
 <contactref element="U1" pad="4"/>
@@ -4068,12 +4081,6 @@ design rules under a new name.</description>
 <wire x1="55.1688" y1="19.05" x2="53.1114" y2="16.9926" width="0.1524" layer="1"/>
 <wire x1="44.196" y1="12.2682" x2="44.187190625" y2="12.235915625" width="0.1524" layer="1"/>
 <wire x1="55.1688" y1="19.05" x2="55.19" y2="19.09" width="0.1524" layer="1"/>
-</signal>
-<signal name="BP4">
-<contactref element="IC2" pad="P$32"/>
-</signal>
-<signal name="BP3">
-<contactref element="IC2" pad="P$31"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
