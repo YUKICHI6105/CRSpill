@@ -32139,9 +32139,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <attribute name="VALUE" x="234.95" y="71.12" size="1.778" layer="96"/>
 <attribute name="NAME" x="234.95" y="87.122" size="1.778" layer="95"/>
 </instance>
-<instance part="GND21" gate="1" x="223.52" y="71.12" smashed="yes">
-<attribute name="VALUE" x="220.98" y="68.58" size="1.778" layer="96" rot="R90"/>
-</instance>
+<instance part="GND21" gate="1" x="223.52" y="71.12" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -32299,6 +32297,13 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="GND46" gate="G$1" pin="GNDIO"/>
 <pinref part="U7" gate="G$1" pin="VSS"/>
 <label x="88.9" y="17.78" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="231.14" y1="76.2" x2="223.52" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="76.2" x2="223.52" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="J3" gate="G$1" pin="4"/>
+<pinref part="GND21" gate="1" pin="GNDA"/>
+<label x="220.98" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -32977,14 +32982,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="IC2" gate="G$1" pin="B3"/>
 <wire x1="50.8" y1="99.06" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
 <label x="58.42" y="99.06" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="GNDA" class="0">
-<segment>
-<wire x1="231.14" y1="76.2" x2="223.52" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="76.2" x2="223.52" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="4"/>
-<pinref part="GND21" gate="1" pin="GNDA"/>
 </segment>
 </net>
 </nets>
