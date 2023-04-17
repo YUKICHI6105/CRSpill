@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="dots" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -50,6 +50,8 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
@@ -76,7 +78,10 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="Badge_Outline" color="7" fill="1" visible="no" active="yes"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -85,6 +90,7 @@
 <layer number="126" name="_bNames" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
@@ -127,11 +133,14 @@
 <layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -2913,6 +2922,43 @@ Source: www.pulseeng.com .. PulseJack-J402.pdf</description>
 </package>
 </packages>
 </library>
+<library name="jumper" urn="urn:adsk.eagle:library:252">
+<description>&lt;b&gt;Jumpers&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SJ_2" urn="urn:adsk.eagle:footprint:15439/1" library_version="2">
+<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
+<wire x1="2.159" y1="-1.016" x2="-2.159" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="2.159" y1="1.016" x2="2.413" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.413" y1="0.762" x2="-2.159" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.413" y1="-0.762" x2="-2.159" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.159" y1="-1.016" x2="2.413" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.413" y1="-0.762" x2="2.413" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.413" y1="-0.762" x2="-2.413" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.159" y1="1.016" x2="2.159" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="0" x2="2.286" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.778" y1="0" x2="-2.286" y2="0" width="0.1524" layer="51"/>
+<wire x1="0" y1="0.762" x2="0" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="1.016" y1="0.127" x2="1.016" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<wire x1="-1.016" y1="-0.127" x2="-1.016" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="1" x="-1.524" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<smd name="2" x="0" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<smd name="3" x="1.524" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<text x="-2.413" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.508" y1="-0.762" x2="0.508" y2="0.762" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="SJ_2" urn="urn:adsk.eagle:package:15474/1" type="box" library_version="2">
+<description>Solder jumper</description>
+<packageinstances>
+<packageinstance name="SJ_2"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2924,7 +2970,7 @@ Source: www.pulseeng.com .. PulseJack-J402.pdf</description>
 <class number="1" name="12v" width="0.5" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules name="SeeedStudio_2layer_DRU_no_angle_20140221">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -2939,26 +2985,28 @@ a wide range of applications. Your particular design
 may have different requirements, so please make the
 necessary adjustments and save your customized
 design rules under a new name.</description>
+<description language="zh">&lt;b&gt;Seeed Studio EAGLE Design Rules&lt;/b&gt;
+</description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mtCopper" value="0.035mm 0.0175mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.0175mm 0.035mm"/>
+<param name="mtIsolate" value="1.5mm 1.1mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
 <param name="mdWireWire" value="6mil"/>
 <param name="mdWirePad" value="6mil"/>
 <param name="mdWireVia" value="6mil"/>
 <param name="mdPadPad" value="6mil"/>
 <param name="mdPadVia" value="6mil"/>
 <param name="mdViaVia" value="6mil"/>
-<param name="mdSmdPad" value="6mil"/>
-<param name="mdSmdVia" value="6mil"/>
-<param name="mdSmdSmd" value="6mil"/>
-<param name="mdViaViaSameLayer" value="6mil"/>
+<param name="mdSmdPad" value="0mil"/>
+<param name="mdSmdVia" value="0mil"/>
+<param name="mdSmdSmd" value="0mil"/>
+<param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="40mil"/>
-<param name="mdDrill" value="6mil"/>
+<param name="mdCopperDimension" value="10mil"/>
+<param name="mdDrill" value="10mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="6mil"/>
-<param name="msDrill" value="0.35mm"/>
-<param name="msMicroVia" value="9.99mm"/>
+<param name="msDrill" value="12mil"/>
+<param name="msMicroVia" value="12mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -2973,9 +3021,9 @@ design rules under a new name.</description>
 <param name="rlMaxPadInner" value="20mil"/>
 <param name="rlMinPadBottom" value="10mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMinViaOuter" value="6mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMinViaInner" value="6mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -2983,16 +3031,16 @@ design rules under a new name.</description>
 <param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
-<param name="psFirst" value="-1"/>
+<param name="psFirst" value="0"/>
 <param name="psElongationLong" value="100"/>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="4mil"/>
-<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinStopFrame" value="2mil"/>
+<param name="mlMaxStopFrame" value="2mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="0mil"/>
+<param name="mlViaStopLimit" value="100mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -3002,7 +3050,7 @@ design rules under a new name.</description>
 <param name="dpGapFactor" value="2.5"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
-<param name="checkRestrict" value="1"/>
+<param name="checkRestrict" value="0"/>
 <param name="checkStop" value="0"/>
 <param name="checkValues" value="0"/>
 <param name="checkNames" value="1"/>
@@ -3208,6 +3256,11 @@ design rules under a new name.</description>
 <element name="J3" library="con-headers" package="MA04-1" value="MA04-1" x="67.1" y="11.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="64.56" y="16.072" size="1.27" layer="25" font="vector" rot="R270"/>
 </element>
+<element name="BOOT0" library="jumper" library_urn="urn:adsk.eagle:library:252" package="SJ_2" package3d_urn="urn:adsk.eagle:package:15474/1" value="" x="36.5" y="16.2" smashed="yes" rot="MR0">
+<attribute name="NAME" x="38.913" y="17.47" size="1.27" layer="26" ratio="10" rot="MR0"/>
+<attribute name="POPULARITY" value="7" x="36.5" y="16.2" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="VALUE" x="36.6001" y="16.2" size="0.02" layer="28" rot="MR0"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -3308,10 +3361,6 @@ design rules under a new name.</description>
 <wire x1="31.623" y1="14.859" x2="32.3088" y2="15.5448" width="0.1524" layer="1"/>
 <wire x1="36.2712" y1="14.7828" x2="36.305003125" y2="14.74113125" width="0.1524" layer="1"/>
 <wire x1="31.623" y1="14.859" x2="31.576" y2="14.8" width="0.1524" layer="1"/>
-<wire x1="35.5854" y1="9.2202" x2="36" y2="9.2202" width="0.1524" layer="1"/>
-<wire x1="36" y1="9.2202" x2="36.0426" y2="9.2202" width="0.1524" layer="1"/>
-<wire x1="35.3568" y1="8.9916" x2="35.5854" y2="9.2202" width="0.1524" layer="1"/>
-<wire x1="36.0426" y1="9.2202" x2="36.105834375" y2="9.29454375" width="0.1524" layer="1"/>
 <wire x1="32.6136" y1="8.9916" x2="32.54" y2="8.96" width="0.1524" layer="1"/>
 <wire x1="43.434" y1="8.6106" x2="43.434" y2="8.2296" width="0.1524" layer="1"/>
 <wire x1="42.3672" y1="9.6774" x2="42.4053" y2="9.6393" width="0.1524" layer="1"/>
@@ -3321,11 +3370,7 @@ design rules under a new name.</description>
 <wire x1="43.1292" y1="15.0114" x2="42.7482" y2="15.0114" width="0.1524" layer="1"/>
 <wire x1="43.434" y1="8.2296" x2="43.47499375" y2="8.198865625" width="0.1524" layer="1"/>
 <wire x1="43.1292" y1="15.0114" x2="43.16113125" y2="15.05499375" width="0.1524" layer="1"/>
-<wire x1="36.4236" y1="9.2964" x2="36.1188" y2="9.2964" width="0.1524" layer="1"/>
-<wire x1="36.7284" y1="9.6012" x2="36.4236" y2="9.2964" width="0.1524" layer="1"/>
 <wire x1="42.3672" y1="9.6012" x2="37.957" y2="9.6012" width="0.1524" layer="1"/>
-<wire x1="37.957" y1="9.6012" x2="36.7284" y2="9.6012" width="0.1524" layer="1"/>
-<wire x1="36.1188" y1="9.2964" x2="36.105834375" y2="9.29454375" width="0.1524" layer="1"/>
 <wire x1="42.3672" y1="9.6012" x2="42.4053" y2="9.6393" width="0.1524" layer="1"/>
 <wire x1="36.3474" y1="14.3256" x2="36.3474" y2="14.7066" width="0.1524" layer="1"/>
 <wire x1="37.957" y1="12.716" x2="36.3474" y2="14.3256" width="0.1524" layer="1"/>
@@ -3383,10 +3428,21 @@ design rules under a new name.</description>
 <wire x1="31.83133125" y1="7.16866875" x2="31.84971875" y2="7.11815" width="0.1524" layer="1"/>
 <wire x1="31.84971875" y1="7.11815" x2="31.909925" y2="7.090075" width="0.1524" layer="1"/>
 <wire x1="31.909925" y1="7.090075" x2="32.2182" y2="6.7818" width="0.1524" layer="1"/>
-<wire x1="35.85319375" y1="9.07339375" x2="36" y2="9.2202" width="0.1524" layer="1"/>
-<wire x1="33.24934375" y1="6.7818" x2="35.5409375" y2="9.07339375" width="0.1524" layer="1"/>
-<wire x1="35.5409375" y1="9.07339375" x2="35.85319375" y2="9.07339375" width="0.1524" layer="1"/>
 <wire x1="32.2182" y1="6.7818" x2="33.24934375" y2="6.7818" width="0.1524" layer="1"/>
+<polygon width="0.1524" layer="1">
+<vertex x="-0.4" y="22.7"/>
+<vertex x="-0.4" y="0.7"/>
+<vertex x="69.4" y="0.7"/>
+<vertex x="69.4" y="22.6"/>
+<vertex x="-0.3" y="22.6"/>
+</polygon>
+<polygon width="0.1524" layer="16">
+<vertex x="-0.4" y="22.7"/>
+<vertex x="-0.4" y="0.7"/>
+<vertex x="69.4" y="0.7"/>
+<vertex x="69.4" y="22.7"/>
+</polygon>
+<contactref element="BOOT0" pad="3"/>
 </signal>
 <signal name="N$2" class="1">
 <contactref element="X1" pad="4"/>
@@ -3577,7 +3633,8 @@ design rules under a new name.</description>
 <wire x1="54.9402" y1="9.7536" x2="54.87" y2="9.7145" width="0.1524" layer="16"/>
 <wire x1="35.2806" y1="14.0208" x2="35.814" y2="14.5542" width="0.1524" layer="1"/>
 <wire x1="46.3296" y1="14.0208" x2="41.7576" y2="14.0208" width="0.1524" layer="16"/>
-<wire x1="41.7576" y1="14.0208" x2="35.2806" y2="14.0208" width="0.1524" layer="16"/>
+<wire x1="41.7576" y1="14.0208" x2="39.7764" y2="14.0208" width="0.1524" layer="16"/>
+<wire x1="39.7764" y1="14.0208" x2="35.2806" y2="14.0208" width="0.1524" layer="16"/>
 <wire x1="46.482" y1="14.1732" x2="46.3296" y2="14.0208" width="0.1524" layer="16"/>
 <wire x1="48.8442" y1="14.1732" x2="46.482" y2="14.1732" width="0.1524" layer="16"/>
 <wire x1="49.6062" y1="13.4112" x2="48.8442" y2="14.1732" width="0.1524" layer="16"/>
@@ -3602,6 +3659,11 @@ design rules under a new name.</description>
 <via x="35.2806" y="14.0208" extent="1-16" drill="0.35"/>
 <via x="41.7576" y="14.6304" extent="1-16" drill="0.35"/>
 <via x="55.626" y="8.763" extent="1-16" drill="0.35"/>
+<contactref element="BOOT0" pad="1"/>
+<wire x1="38.4048" y1="16.1544" x2="38.0332" y2="16.1544" width="0.1524" layer="16"/>
+<wire x1="39.7764" y1="14.7828" x2="38.4048" y2="16.1544" width="0.1524" layer="16"/>
+<wire x1="39.7764" y1="14.0208" x2="39.7764" y2="14.7828" width="0.1524" layer="16"/>
+<wire x1="38.0332" y1="16.1544" x2="38.024" y2="16.2" width="0.1524" layer="16"/>
 </signal>
 <signal name="N$9">
 <contactref element="X1" pad="YA"/>
@@ -3808,11 +3870,9 @@ design rules under a new name.</description>
 <signal name="N$11">
 <contactref element="U$6" pad="3"/>
 <contactref element="U1" pad="6"/>
-<wire x1="36.195" y1="10.287" x2="35.814" y2="10.287" width="0.1524" layer="1"/>
-<wire x1="35.814" y1="10.287" x2="35.763815625" y2="10.234234375" width="0.1524" layer="1"/>
-<wire x1="33.0425875" y1="7.83236875" x2="32.950421875" y2="7.83236875" width="0.1524" layer="1"/>
-<wire x1="35.26861875" y1="10.0584" x2="33.0425875" y2="7.83236875" width="0.1524" layer="1"/>
-<wire x1="35.26861875" y1="10.0584" x2="35.763815625" y2="10.234234375" width="0" layer="19" extent="1-1"/>
+<wire x1="32.950421875" y1="7.83236875" x2="33.0425875" y2="7.83236875" width="0.1524" layer="1"/>
+<wire x1="33.0425875" y1="7.83236875" x2="35.444453125" y2="10.234234375" width="0.1524" layer="1"/>
+<wire x1="35.444453125" y1="10.234234375" x2="35.763815625" y2="10.234234375" width="0.1524" layer="1"/>
 </signal>
 <signal name="PB10">
 <contactref element="U1" pad="21"/>
@@ -3888,6 +3948,18 @@ design rules under a new name.</description>
 </signal>
 <signal name="BOOT0">
 <contactref element="U1" pad="44"/>
+<contactref element="BOOT0" pad="2"/>
+<wire x1="37.719" y1="14.9352" x2="37.719" y2="15.24" width="0.1524" layer="1"/>
+<wire x1="37.9476" y1="14.7066" x2="37.719" y2="14.9352" width="0.1524" layer="1"/>
+<wire x1="37.9476" y1="14.6304" x2="37.9476" y2="14.7066" width="0.1524" layer="1"/>
+<wire x1="38.4048" y1="14.1732" x2="37.9476" y2="14.6304" width="0.1524" layer="1"/>
+<wire x1="38.862" y1="14.1732" x2="38.4048" y2="14.1732" width="0.1524" layer="1"/>
+<wire x1="39.243" y1="14.5542" x2="38.862" y2="14.1732" width="0.1524" layer="1"/>
+<wire x1="36.957" y1="14.5542" x2="39.243" y2="14.5542" width="0.1524" layer="16"/>
+<wire x1="36.300421875" y1="15.210778125" x2="36.957" y2="14.5542" width="0.1524" layer="16"/>
+<wire x1="37.719" y1="15.24" x2="37.71454375" y2="15.2541625" width="0.1524" layer="1"/>
+<wire x1="36.300421875" y1="15.210778125" x2="36.5" y2="16.2" width="0.1524" layer="16"/>
+<via x="39.243" y="14.5542" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="PB2">
 <contactref element="U1" pad="20"/>
