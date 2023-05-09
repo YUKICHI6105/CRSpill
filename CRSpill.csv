@@ -3,8 +3,8 @@
 "C1";"22u";"CPOL-EUE2.5-5";"E2,5-5";"POLARIZED CAPACITOR, European symbol";"";"";"";"";"";"C";
 "C2";"100n";"C-EUC0603";"C0603";"CAPACITOR, European symbol";"";"";"";"";"";"C";
 "C3";"100n";"C-EUC0603";"C0603";"CAPACITOR, European symbol";"";"";"";"";"";"C";
+"C5";"1u";"C-EUC0603";"C0603";"CAPACITOR, European symbol";"";"";"";"";"";"";
 "C16";"100n";"C-EUC0603";"C0603";"CAPACITOR, European symbol";"";"";"";"";"";"";
-"C17";"22u";"CPOL-EUE2-5";"E2-5";"POLARIZED CAPACITOR, European symbol";"";"";"";"";"";"";
 "C18";"100n";"C-EUC0603";"C0603";"CAPACITOR, European symbol";"";"";"";"";"";"";
 "C20";"100n";"C-EUC0603";"C0603";"CAPACITOR, European symbol";"";"";"";"";"";"";
 "F1";"";"R-EU_R1206";"R1206";"RESISTOR, European symbol";"";"";"";"";"";"R";
