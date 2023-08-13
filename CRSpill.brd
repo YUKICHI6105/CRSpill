@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="dots" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -81,7 +81,10 @@
 <layer number="114" name="Badge_Outline" color="7" fill="1" visible="no" active="yes"/>
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="no" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="yes"/>
+<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="no" active="yes"/>
+<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -91,15 +94,40 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="no" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="134" name="silk_top" color="7" fill="1" visible="no" active="no"/>
+<layer number="135" name="silk_bottom" color="7" fill="1" visible="no" active="no"/>
+<layer number="136" name="silktop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="137" name="silkbottom" color="7" fill="1" visible="no" active="yes"/>
+<layer number="138" name="mbTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="139" name="mtKeepout" color="7" fill="1" visible="no" active="yes"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="no" active="yes"/>
+<layer number="141" name="mtRestrict" color="7" fill="1" visible="no" active="yes"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="no" active="yes"/>
+<layer number="143" name="mvRestrict" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="no" active="yes"/>
+<layer number="146" name="DrillLegend_01-20" color="7" fill="1" visible="no" active="yes"/>
+<layer number="147" name="mMeasures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="148" name="mDocument" color="7" fill="1" visible="no" active="yes"/>
+<layer number="149" name="mReference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="yes"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="yes"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="no" active="yes"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="no" active="yes"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="no" active="yes"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="no" active="yes"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
@@ -149,6 +177,23 @@
 <wire x1="69.5" y1="22.76" x2="-0.5" y2="22.76" width="0" layer="20"/>
 <wire x1="-0.5" y1="22.76" x2="-0.5" y2="0.6" width="0" layer="20"/>
 <text x="48" y="7" size="1.778" layer="21">CRSpill by ykc</text>
+<text x="62.374" y="8.378" size="1.27" layer="22" font="vector" rot="MR0" align="center">GND</text>
+<text x="62.374" y="10.41" size="1.27" layer="22" font="vector" rot="MR0" align="center">SWCLK</text>
+<text x="62.374" y="12.442" size="1.27" layer="22" font="vector" rot="MR0" align="center">SWDIO</text>
+<text x="62.374" y="14.474" size="1.27" layer="22" font="vector" rot="MR0" align="center">3V3</text>
+<wire x1="59.326" y1="7.362" x2="65.676" y2="7.362" width="0.1524" layer="22"/>
+<wire x1="65.676" y1="7.362" x2="65.676" y2="9.394" width="0.1524" layer="22"/>
+<wire x1="65.676" y1="9.394" x2="59.326" y2="9.394" width="0.1524" layer="22"/>
+<wire x1="65.676" y1="11.426" x2="59.326" y2="11.426" width="0.1524" layer="22"/>
+<wire x1="65.676" y1="13.458" x2="59.326" y2="13.458" width="0.1524" layer="22"/>
+<wire x1="65.676" y1="15.49" x2="59.326" y2="15.49" width="0.1524" layer="22"/>
+<wire x1="65.676" y1="9.394" x2="65.676" y2="11.426" width="0.1524" layer="22"/>
+<wire x1="65.676" y1="11.426" x2="65.676" y2="13.458" width="0.1524" layer="22"/>
+<wire x1="65.676" y1="13.458" x2="65.676" y2="15.49" width="0.1524" layer="22"/>
+<wire x1="59.326" y1="7.362" x2="59.326" y2="9.394" width="0.1524" layer="22"/>
+<wire x1="59.326" y1="9.394" x2="59.326" y2="11.426" width="0.1524" layer="22"/>
+<wire x1="59.326" y1="11.426" x2="59.326" y2="13.458" width="0.1524" layer="22"/>
+<wire x1="59.326" y1="13.458" x2="59.326" y2="15.49" width="0.1524" layer="22"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">

@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="dots" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -3162,7 +3162,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="21.943" y="17.023" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n" x="31.23" y="12.37" smashed="yes" rot="MR270">
-<attribute name="NAME" x="30.595" y="13.005" size="1.27" layer="26" rot="MR270"/>
+<attribute name="NAME" x="31.795" y="10.505" size="1.27" layer="26" rot="MR270"/>
 <attribute name="SPICEPREFIX" value="C" x="106.16" y="-49.86" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="33.135" y="13.005" size="1.27" layer="28" rot="MR270"/>
 </element>
@@ -3257,7 +3257,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="64.56" y="16.072" size="1.27" layer="25" font="vector" rot="R270"/>
 </element>
 <element name="BOOT0" library="jumper" library_urn="urn:adsk.eagle:library:252" package="SJ_2" package3d_urn="urn:adsk.eagle:package:15474/1" value="" x="36.5" y="16.2" smashed="yes" rot="MR0">
-<attribute name="NAME" x="38.913" y="17.47" size="1.27" layer="26" ratio="10" rot="MR0"/>
+<attribute name="NAME" x="38.913" y="13.47" size="1.27" layer="26" ratio="10" rot="MR0"/>
 <attribute name="POPULARITY" value="7" x="36.5" y="16.2" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="36.6001" y="16.2" size="0.02" layer="28" rot="MR0"/>
 </element>
@@ -3375,7 +3375,6 @@ design rules under a new name.</description>
 <wire x1="37.957" y1="9.6012" x2="37.957" y2="12.716" width="0.1524" layer="1"/>
 <wire x1="36.3474" y1="14.7066" x2="36.305003125" y2="14.74113125" width="0.1524" layer="1"/>
 <wire x1="26.62" y1="9" x2="26.55003125" y2="9.0678" width="0.1524" layer="16"/>
-<wire x1="26.767271875" y1="9.144" x2="26.62" y2="9" width="0.1524" layer="16"/>
 <wire x1="16.383" y1="9.0678" x2="19.431" y2="9.0678" width="0.1524" layer="16"/>
 <wire x1="15.24" y1="10.2108" x2="16.383" y2="9.0678" width="0.1524" layer="16"/>
 <wire x1="14.859" y1="10.2108" x2="15.24" y2="10.2108" width="0.1524" layer="16"/>
@@ -3386,7 +3385,6 @@ design rules under a new name.</description>
 <wire x1="20.574" y1="15.6972" x2="20.574" y2="15.9" width="0.1524" layer="1"/>
 <wire x1="20.574" y1="15.9" x2="20.574" y2="16.3068" width="0.1524" layer="1"/>
 <wire x1="19.6596" y1="19.05" x2="19.63" y2="19.09" width="0.1524" layer="1"/>
-<wire x1="19.5072" y1="9.0678" x2="19.49" y2="9.015" width="0.1524" layer="16"/>
 <wire x1="32.576" y1="14.8" x2="32.576" y2="15.0678" width="0.1524" layer="1"/>
 <wire x1="32.576" y1="15.0678" x2="31.9466" y2="15.6972" width="0.1524" layer="1"/>
 <wire x1="20.574" y1="15.6972" x2="31.9466" y2="15.6972" width="0.1524" layer="1"/>
@@ -3442,7 +3440,6 @@ design rules under a new name.</description>
 <wire x1="32.576" y1="14.096" x2="32.576" y2="14.8" width="0.5" layer="1"/>
 <wire x1="26.62" y1="9" x2="29" y2="11.38" width="0.5" layer="16"/>
 <wire x1="29" y1="11.38" x2="29" y2="11.52" width="0.5" layer="16"/>
-<wire x1="36.305003125" y1="14.74113125" x2="34.976" y2="16.2" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$2" class="1">
 <contactref element="X1" pad="4"/>
